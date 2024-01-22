@@ -1,0 +1,22 @@
+
+import unittest
+
+
+from calculator import Calculator
+
+
+class TestCalculator(unittest.TestCase):
+
+    
+    def test_calculate(self):
+        
+        calc = Calculator()
+        
+        self.assertEqual(calc.calculate("4+5"), 9)
+        self.assertEqual(calc.calculate("10+5*4+3"), 33)
+        self.assertEqual(calc.calculate("4/2"), 2)
+        self.assertEqual(calc.calculate("4/0"), "Error: Division by zero")
+
+
+if __name__ == "__main__":
+    unittest.main()
