@@ -1,0 +1,7 @@
+Test ID: 1
+Test Description: Testare adunare a două numere întregi
+Input: 4+5
+Expected Output: 9
+Actual Output: 9
+Status: PASS
+Comments: NONE
